@@ -118,6 +118,13 @@ section {
       &__item {
         padding-bottom: 28px;
 
+        .active {
+          color: $activeIcon;
+          fill: $activeIcon;
+        }
+
+
+
         &--link {
           display: flex;
           color: $gray;
@@ -144,6 +151,8 @@ section {
             transition: all 0.3s ease-in-out;
           }
         }
+
+
       }
 
       &__item :hover {

@@ -8,11 +8,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="sidebar">
-        <section class="section__sidebar">
+      <nav class="sidebar">
+        <section class="section section__sidebar">
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__item--link" href="#">
+              <a class="menu__item--link" href="#biography">
                 <svg
                   width="20"
                   height="20"
@@ -21,15 +21,16 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="active"
                     d="M8.20705 12.9582C9.40677 12.8615 10.612 12.8615 11.8117 12.9582C12.4651 12.9963 13.1153 13.078 13.7583 13.2029C15.1497 13.4846 16.0581 13.9443 16.4474 14.6857C16.7398 15.2643 16.7398 15.9531 16.4474 16.5317C16.0581 17.2731 15.1857 17.7625 13.7439 18.0145C13.1014 18.1441 12.451 18.2283 11.7973 18.2666C11.1917 18.3333 10.5861 18.3333 9.97335 18.3333H8.87031C8.63961 18.3037 8.41612 18.2889 8.19984 18.2889C7.54614 18.2552 6.89563 18.1735 6.25331 18.0442C4.8619 17.7773 3.95351 17.3028 3.56421 16.5614C3.41392 16.2742 3.33469 15.9534 3.33342 15.6272C3.33037 15.2991 3.40721 14.9754 3.557 14.6857C3.9391 13.9443 4.84748 13.4623 6.25331 13.2029C6.89846 13.0762 7.55119 12.9945 8.20705 12.9582ZM10.0022 1.66667C12.419 1.66667 14.3783 3.68152 14.3783 6.16697C14.3783 8.65241 12.419 10.6673 10.0022 10.6673C7.58533 10.6673 5.62609 8.65241 5.62609 6.16697C5.62609 3.68152 7.58533 1.66667 10.0022 1.66667Z"
                     fill="#8541FA"
                   />
                 </svg>
-                <p>Biography</p>
+                <p class="active">Biography</p>
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__item--link" href="#"
+              <a class="menu__item--link" href="#skills"
                 ><svg
                   width="20"
                   height="20"
@@ -46,7 +47,7 @@
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__item--link" href="#"
+              <a class="menu__item--link" href="#works"
                 ><svg
                   width="20"
                   height="20"
@@ -63,7 +64,7 @@
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__item--link" href="#"
+              <a class="menu__item--link" href="#education"
                 ><svg
                   width="20"
                   height="20"
@@ -80,7 +81,7 @@
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__item--link" href="#"
+              <a class="menu__item--link" href="#contacts"
                 ><svg
                   width="20"
                   height="20"
@@ -174,9 +175,9 @@
             <p>Dark</p>
           </div>
         </section>
-      </div>
+      </nav>
       <main class="main">
-        <section class="hero__section">
+        <section class="section hero__section">
           <div class="icons">
             <a href="#" class="icons__item">
               <svg
@@ -310,7 +311,7 @@
           </div>
         </section>
 
-        <section class="biography__section">
+        <section id="biography" class="section biography__section">
           <p class="biography__subheader subheader">
             Read my incredible <span>BIOGRAPHY</span>
           </p>
@@ -346,7 +347,7 @@
           </div>
         </section>
 
-        <section class="skills__section">
+        <section id="skills" class="section skills__section">
           <p class="skills__subheader subheader">
             What <span>SKILLS</span> do I have?
           </p>
@@ -381,7 +382,7 @@
           </div>
         </section>
 
-        <section class="works__section">
+        <section id="works" class="section works__section">
           <p class="subheader">Let’s look at my<span>Works</span></p>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -406,7 +407,7 @@
           </div>
         </section>
 
-        <section class="education__section">
+        <section id="education" class="section education__section">
           <div class="education__container">
             <p class="subheader">
               How about my
@@ -451,13 +452,17 @@
             </div>
           </div>
         </section>
-        <section class="footer__section">
+        <section id="contacts" class="section footer__section">
           <p class="subheader">
             You can find me on these
             <span>CONTACTS</span>
           </p>
           <div class="footer__icons">
-            <div class="footer__icons--item">
+            <a
+              class="footer__icons--item"
+              target="_blank"
+              href="https://github.com/"
+            >
               <svg
                 width="27"
                 height="29"
@@ -473,8 +478,12 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
-            <div class="footer__icons--item">
+            </a>
+            <a
+              class="footer__icons--item"
+              target="_blank"
+              href="https://www.linkedin.com"
+            >
               <svg
                 width="30"
                 height="30"
@@ -495,8 +504,12 @@
                   fill="#C6C7C9"
                 />
               </svg>
-            </div>
-            <div class="footer__icons--item">
+            </a>
+            <a
+              class="footer__icons--item"
+              target="_blank"
+              href="https://www.google.com/"
+            >
               <svg
                 width="30"
                 height="30"
@@ -521,8 +534,12 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
-            <div class="footer__icons--item">
+            </a>
+            <a
+              class="footer__icons--item"
+              target="_blank"
+              href="https://mail.google.com/"
+            >
               <svg
                 width="28"
                 height="20"
@@ -535,8 +552,12 @@
                   fill="white"
                 />
               </svg>
-            </div>
-            <div class="footer__icons--item">
+            </a>
+            <a
+              class="footer__icons--item"
+              target="_blank"
+              href="https://www.instagram.com/"
+            >
               <svg
                 width="30"
                 height="30"
@@ -566,7 +587,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </div>
+            </a>
           </div>
         </section>
       </main>

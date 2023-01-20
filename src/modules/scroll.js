@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
   document.querySelectorAll(".section").forEach((el, i) => {
     if (el.offsetTop <= scrollBar) {
       document.querySelectorAll(".menu path ").forEach((el) => {
-        console.log(el);
+        // console.log(el);
         if (el.classList.contains("active")) {
           el.classList.remove("active");
         }
@@ -36,7 +36,7 @@ window.addEventListener("scroll", () => {
   document.querySelectorAll(".section").forEach((el, i) => {
     if (el.offsetTop <= scrollBar) {
       document.querySelectorAll(".menu p ").forEach((el) => {
-        console.log(el);
+        // console.log(el);
         if (el.classList.contains("active")) {
           el.classList.remove("active");
         }

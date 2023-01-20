@@ -352,32 +352,52 @@
             What <span>SKILLS</span> do I have?
           </p>
           <div class="skills">
-            <a href="#" class="skills__item">All</a>
-            <a href="#" class="skills__item">Languages</a>
-            <a href="#" class="skills__item">Frameworks</a>
-            <a href="#" class="skills__item">Tools</a>
-            <a href="#" class="skills__item">Testing</a>
+            <span class="skills__item" data-name="all">All</span>
+            <span
+              class="skills__item skills__item--active"
+              data-name="languages"
+              >Languages</span
+            >
+            <span class="skills__item" data-name="frameworks">Frameworks</span>
+            <span class="skills__item" data-name="tools">Tools</span>
+            <span class="skills__item" data-name="testing">Testing</span>
           </div>
           <div class="cards">
-            <div class="cards__item cards__item--ts">
+            <div class="cards__item" data-name="languages">
               <img src="./img/typesript.png" alt="skill" />
               <p>Typescript</p>
             </div>
-            <div class="cards__item cards__item--js">
+            <div class="cards__item" data-name="languages">
               <img src="./img/javascript.png" alt="skill" />
               <p>JavaScript</p>
             </div>
-            <div class="cards__item cards__item--nodejs">
+            <div class="cards__item" data-name="languages">
               <img src="./img/nodejs.png" alt="skill" />
               <p>nodejs</p>
             </div>
-            <div class="cards__item cards__item--python">
+            <div class="cards__item" data-name="languages">
               <img src="./img/python.png" alt="skill" />
               <p>Python</p>
             </div>
-            <div class="cards__item cards__item--html">
+            <div class="cards__item" data-name="languages">
               <img src="./img/html.png" alt="skill" />
               <p>HTML</p>
+            </div>
+            <div class="cards__item cards__item---hide" data-name="tools">
+              <img src="./img/gulp.png" alt="skill" />
+              <p>Gulp</p>
+            </div>
+            <div class="cards__item cards__item---hide" data-name="tools">
+              <img src="./img/webpack.png" alt="skill" />
+              <p>webpack</p>
+            </div>
+            <div class="cards__item cards__item---hide" data-name="testing">
+              <img src="./img/jest.jfif" alt="skill" />
+              <p>JEST</p>
+            </div>
+            <div class="cards__item cards__item---hide" data-name="frameworks">
+              <img src="./img/react.png" alt="skill" />
+              <p>REACT</p>
             </div>
           </div>
         </section>

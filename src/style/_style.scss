@@ -554,6 +554,13 @@ section {
           height: 32px;
         }
       }
+
+      .skills__item--active {
+        box-shadow: 0px 0px 25px rgba(133, 65, 250, 0.3);
+        border-radius: 12px;
+        color: #edecf1;
+        background: $activeIcon;
+      }
     }
 
     .cards {
@@ -609,7 +616,26 @@ section {
         }
       }
     }
+
+    .cards__item---hide {
+      display: none;
+    }
+
+    .cards__item---show {
+      animation: animate 0.4s ease;
+
+      @keyframes animate {
+        0% {
+          transform: scale(0.5);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
   }
+
 
   /*       { works__section }      */
   .works__section {

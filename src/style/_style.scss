@@ -799,3 +799,172 @@ datalist {
     color: $orange;
   }
 }
+
+.light {
+
+  section,
+  .sidebar .section__sidebar {
+    background: $lightbg;
+    color: $darktext;
+  }
+
+  .subheader {
+    color: $darktext;
+  }
+
+  /*       { sidebar }      */
+  .sidebar {
+    .section__sidebar {
+      .menu {
+        .active {
+          color: $activeIcon;
+          fill: $activeIcon;
+        }
+
+        &__item {
+          &--link {
+            color: $darktext;
+
+            svg {
+              width: 20px;
+              height: 20px;
+
+              path {
+                fill: $darktext;
+              }
+            }
+          }
+
+          & :hover {
+            color: $activeIcon;
+
+            svg {
+              path {
+                fill: $activeIcon;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  /*      { Main }        */
+  .main {
+
+    /*      { hero__section }        */
+    .hero__section {
+      .hero {
+        .about {
+          color: $darktext;
+        }
+
+        .icons {
+          & :hover {
+            svg {
+
+              .github__item,
+              .linkedin__item,
+              .instagram__item,
+              .youtube__icon {
+                fill: $activeIcon;
+                transition: all 0.2s ease-in-out;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    /*      { biography__section }        */
+    .biography__section {
+      color: $darktext;
+
+      .biography__text {
+        color: $darktext;
+      }
+    }
+
+    /*       { skills__section }      */
+    .skills__section {
+      .skills {
+        &__item {
+          background: $gray;
+          color: rgba(44, 49, 79, 0.5);
+
+          &:hover {
+            background: #a068ff;
+            box-shadow: 0px 0px 25px rgba(133, 65, 250, 0.3);
+            color: #edecf1;
+          }
+
+          &:active {
+            background: $activeIcon;
+          }
+
+          &--active {
+            background: $activeIcon;
+            color: #EDECF1;
+          }
+        }
+      }
+
+      .cards__item {
+        border: 2px solid $gray;
+        color: $darktext;
+      }
+    }
+
+    /*       { works__section }      */
+
+    /*       { education__section }      */
+    .education__section {
+      .education__container {
+        .educations {
+          .education__card {
+            &--text {
+              .text__subheader {
+                color: $darktext;
+              }
+
+              .text__info {
+                color: $darktext;
+              }
+            }
+
+            &--line {
+              border: 1.4px rgba(44, 49, 79, 0.5) solid;
+            }
+
+            &--years {
+              color: rgba(44, 49, 79, 0.05);
+            }
+          }
+        }
+      }
+    }
+
+    /*       { footer__section }      */
+    .footer__section {
+      .footer__icons {
+        &--item {
+          background: #2c314f;
+        }
+      }
+    }
+  }
+
+  path.youtube__white {
+    fill: $lightbg;
+  }
+
+  path.github__item,
+  path.linkedin__item,
+  path.instagram__item,
+  path.youtube__icon {
+    fill: $darktext;
+  }
+}

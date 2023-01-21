@@ -1,10 +1,6 @@
-let themeSwitcher = document.getElementById("swither");
+const body = document.querySelector("body");
+const themeSwitcher = document.querySelector(".toggle");
 
-themeSwitcher.onclick = function () {
-  let theme = document.getElementById("theme");
-  if (theme.getAttribute("href") == "dark.scss") {
-    theme.href = "light.scss";
-  } else {
-    theme.href = "dark.scss";
-  }
-};
+themeSwitcher.addEventListener("click", () => {
+  body.classList.toggle("light");
+});

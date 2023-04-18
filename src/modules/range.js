@@ -4,7 +4,6 @@ const dataValue = document.querySelectorAll("option");
 
 function handleInputChange(e) {
   let target = e.target;
-  // console.log(target);
   if (e.target.type !== "range") {
     target = document.getElementById("range");
   }
@@ -12,12 +11,8 @@ function handleInputChange(e) {
   const min = target.min;
   const max = target.max;
   const val = target.value;
-  // console.log(min);
-  // console.log(max);
-  // console.log(val);
 
   dataValue.forEach((option) => {
-    // console.log(option);
     option.addEventListener("option", handleInputChange);
     option.label == val
       ? option.classList.add("current")
@@ -30,5 +25,3 @@ function handleInputChange(e) {
 rangeInputs.forEach((input) => {
   input.addEventListener("input", handleInputChange);
 });
-
-numberInput.addEventListener("input", handleInputChange);

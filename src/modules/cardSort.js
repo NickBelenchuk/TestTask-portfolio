@@ -1,7 +1,6 @@
 const filterItem = document.querySelector(".skills");
 const filterCard = document.querySelectorAll(".cards .cards__item");
-// console.log(filterItem + " filterItem");
-// console.log(filterCard + " filterCard");
+
 window.onload = () => {
   filterItem.onclick = (selectedItem) => {
     if (selectedItem.target.classList.contains("skills__item")) {

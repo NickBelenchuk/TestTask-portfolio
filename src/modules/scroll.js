@@ -5,9 +5,16 @@ anchors.forEach((anchor) => {
     e.preventDefault();
 
     const elementId = anchor.getAttribute("href").substring(1);
-    document.getElementById(elementId).scrollIntoView({
+    const section = document.getElementById(elementId);
+    if (!section) return;
+
+    const topOffset = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const scrollPos = topOffset - sectionHeight;
+
+    window.scrollTo({
+      top: scrollPos,
       behavior: "smooth",
-      block: "end",
     });
   });
 });

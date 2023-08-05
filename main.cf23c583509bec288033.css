@@ -1,0 +1,353 @@
+@import url(https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap);
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+.swiper{max-width:611px;padding-top:50px;padding-bottom:32px}.swiper-wrapper{gap:20px}.swiper-slide{flex-direction:column;font-size:18px;height:241px;overflow:hidden;border-radius:12px;display:-webkit-flex;justify-content:center;align-items:center;opacity:.5}.swiper-slide:hover .slide__content{transition:all .3s ease-in-out;-webkit-filter:blur(6.5px);filter:blur(6.5px)}.swiper-slide:hover .blur__content--btn{transition:all .3s ease-in-out;display:block}.swiper-slide .blur__content--btn{display:none;position:absolute;padding:10px 40px;background:#8541fa;box-shadow:0px 0px 25px rgba(133,65,250,.25);border-radius:12px;text-transform:uppercase;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:#fff;border:none;cursor:pointer;z-index:999999999999999}.swiper-slide .blur__content--btn:hover{background:#a068ff}.swiper-slide .blur__content--btn:active{background:#7036d3}.swiper-slide .slide__content{display:flex;height:100%;width:100%;align-items:center;background-position:center;background-repeat:no-repeat;background-image:url(assets/slide2.png)}.swiper-slide .slide__content--text{background:#2c314f;color:#fff;font-weight:600;font-size:13px;line-height:18px;width:225px;height:46px;justify-content:center;align-items:center;display:flex}.swiper-slide-active{-webkit-transform:scale(1.1) !important;transform:scale(1.1) !important}.swiper-slide-active{opacity:1;transition:all .3s ease-in-out}.swiper-button-next{padding:20px;width:15px;height:15px;top:156px;right:0;background:rgba(198,199,201,.3);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);border-radius:12px}.swiper-button-prev{padding:20px;width:15px;height:15px;top:156px;left:0;background:rgba(198,199,201,.3);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);border-radius:12px}.swiper-button-next,.swiper-button-prev :root{--swiper-navigation-size: 15px !important}.swiper-button-next,.swiper-button-prev :root{color:#fcbd30}.swiper-button-prev,.swiper-button-next :root{--swiper-navigation-size: 15px !important}.swiper-button-prev,.swiper-button-next :root{color:#fcbd30}*{padding:0;margin:0;box-sizing:border-box}body{font-family:"Open Sans",sans-serif;background:#10141d}p,h1,h2,h3,h4,h5,h6{padding:0;margin:0}ul{list-style:none}a{text-decoration:none}.container{max-width:1360px;width:100%;padding:0 20px;margin:0 auto;display:flex}section{background-color:#151c2c;border-radius:12px}.subheader{text-align:center;padding-top:34px;font-size:17px;line-height:23px;color:#edecf1}.subheader span{color:#fcbd30;text-transform:uppercase}.sidebar{position:relative;width:300px;margin:20px 20px 0 0;border-radius:12px}.sidebar .section__sidebar{position:-webkit-sticky;position:sticky;top:20px;background:#151c2c;padding:34px 0 32px 0;max-height:650px}.sidebar .section__sidebar .menu__item{padding-bottom:28px}.sidebar .section__sidebar .menu__item .active{color:#8541fa;fill:#8541fa}.sidebar .section__sidebar .menu__item--link{display:flex;color:#c6c7c9;align-items:center;padding-left:32px}.sidebar .section__sidebar .menu__item--link svg{width:20px;height:20px}.sidebar .section__sidebar .menu__item--link svg path{fill:#c6c7c9;transition:all .3s ease-in-out}.sidebar .section__sidebar .menu__item--link p{padding-left:20px;transition:all .3s ease-in-out}.sidebar .section__sidebar .menu__item :hover{color:#8541fa}.sidebar .section__sidebar .menu__item :hover svg path{fill:#8541fa}.sidebar .section__sidebar .daynight{display:flex;color:#c6c7c9;justify-content:center;margin-top:322px}.sidebar .section__sidebar .daynight p{padding:0 14px}.sidebar .section__sidebar .daynight #checkbox{display:none;background-color:#0c0a15}.sidebar .section__sidebar .daynight .toggle{display:flex;justify-content:space-around;height:20px;width:43px;background-color:#0c0a15;border-radius:9999px;background-size:cover;position:relative;cursor:pointer;transition:all .5s ease-in-out}.sidebar .section__sidebar .daynight .toggle::before{content:"";height:14px;width:14px;position:absolute;top:3px;right:10%;border-radius:50%;background-color:#8541fa;transition:all .5s ease-in-out}.sidebar .section__sidebar .daynight #checkbox:checked+.toggle::before{position:absolute;right:62%}.main{width:100%;max-width:1000px;padding-top:20px}.main .hero__section{padding:0 40px 88px 40px;max-height:429px}.main .hero__section .icons{display:flex;justify-content:flex-end;gap:19px;padding-top:34px;padding-bottom:38px}.main .hero__section .icons__item{display:flex;width:16px;height:16px;border-radius:50%;align-items:center;justify-content:center;cursor:pointer;z-index:99999}.main .hero__section .icons :hover svg .github__item,.main .hero__section .icons :hover svg .linkedin__item,.main .hero__section .icons :hover svg .instagram__item,.main .hero__section .icons :hover svg .youtube__icon{fill:#8541fa;transition:all .2s ease-in-out}.main .hero__section .hero{display:flex;justify-content:space-between}.main .hero__section .hero .about{font-style:normal;color:#edecf1}.main .hero__section .hero .about__hi{font-weight:400;font-size:20px;line-height:27px}.main .hero__section .hero .about__title{color:#fcbd30;font-weight:700;font-size:40px;line-height:54px;padding-top:1px}.main .hero__section .hero .about__exp{font-weight:600;font-size:24px;line-height:33px;padding-top:9px}.main .hero__section .hero .about__btn{margin-top:27px;outline:none;border:none;font-weight:600;font-size:13px;line-height:18px;color:#fff;padding:7px 23px;background:#8541fa;box-shadow:0px 0px 25px rgba(133,65,250,.3);border-radius:12px;cursor:pointer;transition:all .3s ease-in-out}.main .hero__section .hero .about__btn:hover{background:#a068ff}.main .hero__section .hero .about__btn:active{background:#8541fa}.main .hero__section .hero .image__block{margin-left:auto}.main .hero__section .hero .image__block .block{position:relative;background:#fcbd30;width:460px;height:253px;border-radius:12px}.main .hero__section .hero .image__block .block .photo{position:absolute;left:20%;top:-42.7%}.main .biography__section{margin:20px 0;color:#edecf1;font-style:normal;font-weight:400;padding:0 10px}.main .biography__section .biography__text{max-width:700px;margin:0 auto;padding:24px 0 38px 0;font-size:15px;line-height:26px;color:#fff}.main .biography__section .biography__text #rangevalue{color:#fcbd30}.main .biography__section .range{padding-bottom:34px;text-align:center}.main .biography__section .range input,.main .biography__section .range output{display:inline-block;vertical-align:middle;font-size:1em;font-family:Arial,sans-serif}.main .biography__section .range output{background:#151c2c;padding:5px 16px;border-radius:3px;color:#fff}.main .biography__section .range input[type=range]{-webkit-appearance:none;width:100%;max-width:448px;height:4px;background:rgba(255,255,255,.6);border-radius:10px;background-image:linear-gradient(#8541fa, #8541fa);background-size:45% 100%;background-repeat:no-repeat;align-items:center}.main .biography__section .range input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;height:14px;width:14px;border-radius:50%;background:#8541fa;border:2px solid #fff;cursor:ew-resize}.main .skills__section{padding-bottom:32px}.main .skills__section .skills{padding:24px 0 38px 0;max-width:513px;display:flex;justify-content:center;margin:0 auto;flex-wrap:wrap;gap:15px}.main .skills__section .skills__item{display:flex;align-items:center;justify-content:center;background:#2c314f;border-radius:12px;width:161px;height:40px;font-style:normal;font-weight:600;font-size:15px;line-height:20px;color:rgba(198,199,201,.5);cursor:pointer;transition:all .3s ease-in-out}.main .skills__section .skills__item:hover{background:#a068ff;box-shadow:0px 0px 25px rgba(133,65,250,.3);border-radius:12px;color:#edecf1}.main .skills__section .skills__item:active{background:#8541fa}.main .skills__section .skills .skills__item--active{box-shadow:0px 0px 25px rgba(133,65,250,.3);border-radius:12px;color:#edecf1;background:#8541fa}.main .skills__section .cards{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;margin:0 auto;overflow:hidden;max-width:490px;gap:20px;color:#fff}.main .skills__section .cards__item{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;border:2px solid #2c314f;border-radius:12px;width:150px;height:150px}.main .skills__section .cards__item img{width:91px;height:91px}.main .skills__section .cards__item p{width:80px;text-align:center;font-weight:600;font-size:11px;line-height:15px;text-transform:uppercase}.main .skills__section .cards__item---hide{display:none}.main .skills__section .cards__item---show{-webkit-animation:animate .4s ease;animation:animate .4s ease}@-webkit-keyframes animate{0%{-webkit-transform:scale(0.5);transform:scale(0.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes animate{0%{-webkit-transform:scale(0.5);transform:scale(0.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}.main .works__section{margin-top:20px}.main .education__section{margin-top:20px}.main .education__section .education__container{margin:0 auto;max-width:590px}.main .education__section .education__container .subheader{padding-bottom:10px}.main .education__section .education__container .educations .education__card{display:flex;justify-content:space-between;padding-bottom:30px}.main .education__section .education__container .educations .education__card--text{flex:1}.main .education__section .education__container .educations .education__card--text .text__subheader{font-weight:700;font-size:16px;line-height:22px;color:#edecf1}.main .education__section .education__container .educations .education__card--text .text__info{font-weight:400;font-size:13px;line-height:21px;color:#c6c7c9;padding-top:12px}.main .education__section .education__container .educations .education__card--line{display:block;border-radius:12px;border:1.4px rgba(198,199,201,.5) solid;height:auto;margin:0 20px}.main .education__section .education__container .educations .education__card--years{flex:1;display:flex;align-items:center;font-weight:700;font-size:50px;line-height:68px;color:rgba(255,255,255,.05)}.main .footer__section{margin:20px 0}.main .footer__section .footer__icons{display:flex;align-items:center;justify-content:center;gap:20px;padding:32px 0;flex-wrap:wrap}.main .footer__section .footer__icons--item{transition:all .3s ease-in-out;width:74px;height:74px;background:#2c314f;border-radius:50%;display:flex;justify-content:center;align-items:center;cursor:pointer;opacity:.5}.main .footer__section .footer__icons :hover{opacity:1}datalist{display:flex;width:100%;max-width:448px;align-items:center;margin:0 auto;justify-content:space-between;font-weight:600;font-size:16px;line-height:22px;color:#c6c7c9}datalist .current{color:#fcbd30}.light section,.light .sidebar .section__sidebar{background:#edecf1;color:#2c314f}.light .subheader{color:#2c314f}.light .sidebar .section__sidebar .menu .active{color:#8541fa;fill:#8541fa}.light .sidebar .section__sidebar .menu__item--link{color:#2c314f}.light .sidebar .section__sidebar .menu__item--link svg{width:20px;height:20px}.light .sidebar .section__sidebar .menu__item--link svg path{fill:#2c314f}.light .sidebar .section__sidebar .menu__item :hover{color:#8541fa}.light .sidebar .section__sidebar .menu__item :hover svg path{fill:#8541fa}.light .main .hero__section .hero .about{color:#2c314f}.light .main .hero__section .hero .icons :hover svg .github__item,.light .main .hero__section .hero .icons :hover svg .linkedin__item,.light .main .hero__section .hero .icons :hover svg .instagram__item,.light .main .hero__section .hero .icons :hover svg .youtube__icon{fill:#8541fa;transition:all .2s ease-in-out}.light .main .biography__section{color:#2c314f}.light .main .biography__section .biography__text{color:#2c314f}.light .main .skills__section .skills__item{background:#c6c7c9;color:rgba(44,49,79,.5)}.light .main .skills__section .skills__item:hover{background:#a068ff;box-shadow:0px 0px 25px rgba(133,65,250,.3);color:#edecf1}.light .main .skills__section .skills__item:active{background:#8541fa}.light .main .skills__section .skills__item--active{background:#8541fa;color:#edecf1}.light .main .skills__section .cards__item{border:2px solid #c6c7c9;color:#2c314f}.light .main .education__section .education__container .educations .education__card--text .text__subheader{color:#2c314f}.light .main .education__section .education__container .educations .education__card--text .text__info{color:#2c314f}.light .main .education__section .education__container .educations .education__card--line{border:1.4px rgba(44,49,79,.5) solid}.light .main .education__section .education__container .educations .education__card--years{color:rgba(44,49,79,.05)}.light .main .footer__section .footer__icons--item{background:#2c314f}.light path.youtube__white{fill:#edecf1}.light path.github__item,.light path.linkedin__item,.light path.instagram__item,.light path.youtube__icon{fill:#2c314f}.popup{display:none;position:fixed;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);max-width:500px;max-height:300px;width:100%;height:100%;border:1px solid #9b9a9a;padding:25px;text-align:center;background:#f5f0f0;border-radius:20px;z-index:9999}.popup span{display:inline-flex;width:20px;height:20px;justify-content:center;text-align:center;border-radius:50%;background:#242222;color:#c6c7c9;cursor:pointer;transition:all .3s ease-in-out}.popup span:hover{background:#c6c7c9;color:#d60606}@media (max-width: 760px){.swiper-button-next{right:20px}.swiper-button-prev{left:20px}}@media (max-width: 1024px){.container{padding:0px 10px 0px 24px}.sidebar{align-items:center;justify-content:center;margin-right:10px;width:70px}.sidebar p{display:none}.sidebar .section__sidebar{padding:24px 0 32px 0;width:70px}.sidebar .section__sidebar .menu__item--link{padding-left:0px;justify-content:center}}@media (max-width: 768px){.container{padding:0}section{border-radius:0}.subheader{padding-top:14px;font-size:13px;line-height:18px}.sidebar{margin:0 5px 0 0}.sidebar .section__sidebar{top:0px;border-top-right-radius:12px;border-bottom-right-radius:12px;width:60px}.main{padding-top:0px}.main .biography__section .biography__text{padding:16px 0 20px 0;font-size:12px}.main .skills__section .cards{overflow:scroll;height:320px}.main .education__section .education__container{max-width:100%;padding-bottom:14px}.main .education__section .education__container .educations .education__card{flex-direction:column;padding:5px 10px}.main .education__section .education__container .educations .education__card--line{margin:8px 0}.main .education__section .education__container .educations .education__card--years{display:block;font-weight:700;font-size:25px;line-height:34px;text-align:right;color:rgba(255,255,255,.25)}.main .education__section .education__container .educations .education__card--reverse{flex-direction:column-reverse;padding-top:0px;padding-bottom:0}.main .footer__section .footer__icons{padding:22px 10px 14px 10px}.main .hero__section,.main .biography__section,.main .skills__section,.main .works__section,.main .education__section,.main .footer__section{border-radius:12px 0px 0px 12px}}@media (max-width: 989px){.main .hero__section{padding:0 0 18px 0;max-height:100%}.main .hero__section .icons{justify-content:center;gap:19px;padding:20px 0}.main .hero__section .hero{flex-direction:column;align-items:center}.main .hero__section .hero .about{text-align:center}.main .hero__section .hero .image__block{margin-top:32px;text-align:center;justify-content:center;align-items:center;width:-webkit-fill-available}.main .hero__section .hero .image__block .block{width:auto;margin-left:auto;justify-content:center;align-items:center;display:flex}.main .hero__section .hero .image__block .block .photo{width:280px;top:-58%;max-width:90%;left:auto}}@media (max-width: 425px){.main .hero__section .hero .about__hi{font-size:14px;line-height:19px}.main .hero__section .hero .about__title{font-style:normal;font-weight:700;font-size:24px;line-height:33px}.main .hero__section .hero .about__exp{font-weight:600;font-size:15px;line-height:20px}.main .hero__section .hero .image__block .block{width:auto;margin-left:auto;justify-content:center;align-items:center;display:flex;height:163px;border-radius:0}.main .hero__section .hero .image__block .block .photo{width:187px}.main .skills__section{padding-bottom:14px}.main .skills__section .skills{flex-direction:column;padding:10px 10px 14px 10px;gap:4px}.main .skills__section .skills__item{flex-direction:column;padding:10px 10px 14px 10px;width:100%;height:32px}.main .skills__section .cards{overflow:scroll;gap:11px;height:271px}.main .skills__section .cards__item{max-width:130px;max-height:130px}.main .hero__section,.main .biography__section,.main .skills__section,.main .works__section,.main .education__section,.main .footer__section{margin:0 0 5px 0}}@media (max-width: 1100px){.main .hero__section .hero .image__block{max-width:100%}.main .hero__section .hero .image__block .block{min-width:80%;margin-left:auto}}@media (max-width: 375px){.main .biography__section .biography__text{font-size:10px;line-height:18px}}

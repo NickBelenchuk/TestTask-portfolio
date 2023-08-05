@@ -1,6 +1,5 @@
 # WEBPACK
 
-#### https://nickbelenchuk.github.io/portfolio-test-task/
 
 npm i
 
